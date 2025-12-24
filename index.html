@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      School Management System | Complete ERP Solution for Educational
+      Institutions - ETNS Solutions
+    </title>
+    <meta
+      name="description"
+      content="Transform your educational institution with ETNS's comprehensive school management system. Streamline admissions, attendance, academics, parent communication, and administrative operations with our cloud-based ERP solution. Trusted by 500+ schools across India."
+    />
+    <meta
+      name="keywords"
+      content="school management system, school ERP, student information system, education management software, school administration software, attendance management, fee management, online learning platform, parent portal, teacher management, ETNS Solutions"
+    />
+    <meta name="author" content="ETNS Solutions Pvt Ltd" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://etns.co.in/school-management-system" />
+    <link rel="icon" type="image/x-icon" href="https://etns.co.in/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-6p9Yjz8DqYpE6l8n9T6rJ0xZzP5Z9z8X6J6lXvZpVZpZlF1ZzE+6s8k4Z1k5+8z7g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="School Management System - ETNS Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Complete ERP solution for educational institutions with intelligent automation and real-time insights."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://etns.co.in/school-management-system" />
+    <meta
+      property="og:image"
+      content="https://etns.co.in/assets/images/school-management-og.jpg"
+    />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="School Management System - ETNS Solutions"
+    />
+    <meta
+      name="twitter:description"
+      content="Transform education with intelligent management solutions."
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="./assets/js/tailwind.js"></script> -->
+     
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2563eb",
+              secondary: "#7c3aed",
+              accent: "#06b6d4",
+            },
+            animation: {
+              fadeInUp: "fadeInUp 0.8s ease-out",
+              fadeIn: "fadeIn 0.8s ease-out",
+              slideInLeft: "slideInLeft 0.8s ease-out",
+              slideInRight: "slideInRight 0.8s ease-out",
+              scaleIn: "scaleIn 0.6s ease-out",
+            },
+            keyframes: {
+              fadeInUp: {
+                "0%": { opacity: "0", transform: "translateY(30px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              fadeIn: {
+                "0%": { opacity: "0" },
+                "100%": { opacity: "1" },
+              },
+              slideInLeft: {
+                "0%": { opacity: "0", transform: "translateX(-50px)" },
+                "100%": { opacity: "1", transform: "translateX(0)" },
+              },
+              slideInRight: {
+                "0%": { opacity: "0", transform: "translateX(50px)" },
+                "100%": { opacity: "1", transform: "translateX(0)" },
+              },
+              scaleIn: {
+                "0%": { opacity: "0", transform: "scale(0.9)" },
+                "100%": { opacity: "1", transform: "scale(1)" },
+              },
+            },
+          },
+        },
+      }
+    </script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "ETNS School Management System",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web, iOS, Android",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR",
+          "description": "Free trial available"
+        },
+        "provider": {
+          "@type": "Organization",
+          "name": "ETNS Solutions Pvt Ltd",
+          "url": "https://etns.co.in"
+        }
+      }
+    </script>
+
+    <style>
+      .gradient-text {
+        background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      /* Enhanced scroll animation classes */
+      .scroll-animate {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      
+      .scroll-animate.animate-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      .slide-left {
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      }
+      
+      .slide-left.animate-in {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      
+      .slide-right {
+        opacity: 0;
+        transform: translateX(50px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      }
+      
+      .slide-right.animate-in {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      
+      .scale-in {
+        opacity: 0;
+        transform: scale(0.9);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      
+      .scale-in.animate-in {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      /* Added floating animation for hero image */
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+      }
+      
+      .float-animation {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      /* Added pulse animation for CTA buttons */
+      @keyframes pulse-glow {
+        0%, 100% { box-shadow: 0 0 20px rgba(37, 99, 235, 0.3); }
+        50% { box-shadow: 0 0 40px rgba(37, 99, 235, 0.6); }
+      }
+      
+      .pulse-glow {
+        animation: pulse-glow 2s ease-in-out infinite;
+      }
+
+      /* Added tab styles for interactive sections */
+      .tab-button {
+        position: relative;
+        transition: all 0.3s ease;
+      }
+      
+      .tab-button.active {
+        color: #2563eb;
+      }
+      
+      .tab-button.active::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+        border-radius: 2px;
+      }
+
+      /* Added carousel styles */
+      .carousel-container {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      .carousel-slide {
+        min-width: 100%;
+        flex-shrink: 0;
+      }
+
+      /* Added modal styles */
+      .modal-backdrop {
+        backdrop-filter: blur(8px);
+        background: rgba(0, 0, 0, 0.5);
+      }
+    </style>
+    <style>
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <!-- WhatsApp Floating Button -->
+  <a
+  href="https://wa.me/919124754242"
+  target="_blank"
+  aria-label="Chat on WhatsApp"
+  class="fixed bottom-6 right-6 z-[9999] group flex items-center justify-center bg-[#25D366] text-white p-2 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300"
+>
+  <img
+    src="assets/images/wh.png"
+    alt="WhatsApp"
+    class="w-8 h-8 object-contain"
+  />
+
+  <!-- hover text -->
+  <span
+    class="absolute right-14 whitespace-nowrap bg-black text-white text-sm px-3 py-1 rounded-md opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 pointer-events-none"
+  >
+    Chat with us
+  </span>
+</a>
+
+
+
+  <body class="font-sans antialiased">
+    <!-- Header Navigation -->
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-300 ease-in-out backdrop-blur-sm shadow-sm"
+    >
+      <nav
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        role="navigation"
+        aria-label="Main navigation"
+      >
+        <div class="flex justify-between items-center h-20">
+          <div class="flex items-center">
+            <a href="index.html">              
+              <img
+              src="https://etns.co.in/_next/image?url=%2Fassets%2Fimages%2FETNS%20LOGO.png&w=256&q=75"
+              alt=""
+              />
+            </a>
+          </div>
+
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="text-primary hover:text-primary transition-colors font-medium"
+              >Home</a
+            >
+            <a
+              href="features.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >Features</a
+            >
+            <a
+              href="services.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >Services</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >About</a
+            >
+            <a
+              href="contact.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >Contact</a
+            >
+            <button
+              id="demo-btn"
+              class="bg-primary text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+            >
+              Request Demo
+            </button>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden text-gray-700 focus:outline-none"
+            aria-label="Toggle mobile menu"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+          <div class="flex flex-col space-y-3">
+            <a
+              href="index.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >Home</a
+            >
+            <a
+              href="features.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >Features</a
+            >
+            <a
+              href="services.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >Services</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >About</a
+            >
+            <a
+              href="contact.html"
+              class="text-gray-700 hover:text-primary transition-colors font-medium"
+              >Contact</a
+            >
+            <button
+              id="demo-btn-mobile"
+              class="bg-primary text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 transition-colors font-medium text-center"
+            >
+              Request Demo
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+  class="pt-36  pb-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-white to-purple-50"
+>
+  <div class="max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Slide-left animation for hero content -->
+      <div class="slide-left">
+        <h1
+          class="text-4xl sm:text-5xl lg:text-5xl font-bold text-gray-900 leading-snug mb-5"
+        >
+          Transform Education with
+          <span class="gradient-text block  leading-snug">
+            Intelligent Management
+          </span>
+        </h1>
+
+        <p class="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
+          Empower your educational institution with a comprehensive digital
+          platform that automates operations, enhances collaboration, and
+          drives academic excellence through real-time insights.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mb-8">
+          <!-- Added pulse-glow animation to CTA button -->
+          <a
+            href="contact.html"
+            class="bg-primary text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl text-center font-semibold pulse-glow"
+          >
+            Start Free Trial
+          </a>
+          <a
+            href="features.html"
+            class="border-2 border-primary text-primary px-8 py-4 rounded-lg hover:bg-primary hover:text-white transition-all text-center font-semibold"
+          >
+            Explore Features
+          </a>
+        </div>
+
+        <!-- Made stats interactive with counter animation -->
+        <div class="grid grid-cols-3 gap-6 pt-2 border-t border-gray-200">
+          <div class="border-r border-gray-200 text-center">
+            <p class="text-3xl font-bold text-primary counter" data-target="420" data-suffix="+">0</p>
+            <p class="text-sm text-gray-600 mt-1">Institutions</p>
+          </div>
+          <div class="border-r border-gray-200 text-center">
+            <p class="text-3xl font-bold text-primary counter" data-target="5200" data-suffix="K+">0</p>
+            <p class="text-sm text-gray-600 mt-1">Active Users</p>
+          </div>
+          <div class="text-center">
+            <p class="text-3xl font-bold text-primary counter" data-target="99.9" data-suffix="%">0</p>
+            <p class="text-sm text-gray-600 mt-1">Uptime</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Added floating animation to hero image -->
+      <div class="relative slide-right">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 relative z-10 float-animation">
+          <img
+            src="assets/images/dashboard.png"
+            alt="School Management System Dashboard Interface"
+            class="w-full h-auto rounded-lg"
+            loading="eager"
+          />
+        </div>
+
+        <div
+          class="absolute -bottom-6 -right-6 w-72 h-72 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl -z-10"
+        ></div>
+        <div
+          class="absolute -top-6 -left-6 w-32 h-32 bg-accent/20 rounded-full -z-10"
+        ></div>
+      </div>
+    </div>
+  </div>
+      </section>
+
+      <!-- Why Choose Section -->
+      <!-- Added scroll-animate class to section -->
+      <section class="py-10 px-4 sm:px-6 lg:px-8 bg-gray-50 scroll-animate">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-6">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
+              Why Choose <span class="gradient-text">ETNS School Management System</span>
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+              Transform your educational institution with cutting-edge technology designed specifically for modern schools, colleges, and universities.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">100% Data Security</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Bank-grade encryption and secure cloud infrastructure ensure your sensitive academic and administrative data remains protected 24/7.
+              </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Real-Time Updates</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Instant notifications and live dashboards keep parents, teachers, and administrators informed about every important event and milestone.
+              </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-6">
+                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Mobile-First Design</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Access the complete system from any device - iOS, Android, or desktop - with native mobile apps for seamless on-the-go management.
+              </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Automated Fee Management</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Eliminate manual errors with automated fee collection, online payment integration, and instant receipt generation with SMS notifications.
+              </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
+                <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Advanced Analytics</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Make data-driven decisions with comprehensive reports on attendance trends, academic performance, and resource utilization patterns.
+              </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+              <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536M0 5.656l3.536 3.536M9.172 9.172L5.636 5.636M3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">24/7 Support</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Dedicated technical support team available round-the-clock to resolve issues, answer questions, and ensure smooth operations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comprehensive Modules Section -->
+      <!-- Added scroll-animate class to section -->
+      <section class="py-18 px-4 sm:px-6 lg:px-8 bg-white scroll-animate">
+        <div class="max-w-7xl mx-auto">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            >
+              Comprehensive
+              <span class="gradient-text">Feature Modules</span>
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+              Everything you need to manage your institution efficiently in one
+              unified platform.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Added scale-in animation to each module card -->
+            <article
+              class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-xl hover:shadow-xl transition-all border border-blue-100 scale-in"
+              style="transition-delay: 0.1s"
+            >
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">Student Information System</h3>
+                  <p class="text-gray-600 text-sm leading-relaxed">Complete student lifecycle management from admission to alumni - demographics, medical records, family details, and academic history.</p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="bg-gradient-to-br from-purple-50 to-white p-8 rounded-xl hover:shadow-xl transition-all border border-purple-100 scale-in"
+              style="transition-delay: 0.2s"
+            >
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">Attendance Management</h3>
+                  <p class="text-gray-600 text-sm leading-relaxed">Biometric, RFID, and manual attendance tracking with real-time SMS/email alerts to parents for absences and late arrivals.</p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="bg-gradient-to-br from-cyan-50 to-white p-8 rounded-xl hover:shadow-xl transition-all border border-cyan-100 scale-in"
+              style="transition-delay: 0.3s"
+            >
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">Examination & Grading</h3>
+                  <p class="text-gray-600 text-sm leading-relaxed">Automated exam scheduling, online test creation, mark entry, grade calculation, and digital report card generation with analytics.</p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="bg-gradient-to-br from-indigo-50 to-white p-8 rounded-xl hover:shadow-xl transition-all border border-indigo-100 scale-in"
+              style="transition-delay: 0.4s"
+            >
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-indigo-500/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">Fee Management</h3>
+                  <p class="text-gray-600 text-sm leading-relaxed">Online fee payment gateway integration, automated reminders, installment tracking, fine calculation, and comprehensive accounting.</p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="bg-gradient-to-br from-pink-50 to-white p-8 rounded-xl hover:shadow-xl transition-all border border-pink-100 scale-in"
+              style="transition-delay: 0.5s"
+            >
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-pink-500/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">Timetable Management</h3>
+                  <p class="text-gray-600 text-sm leading-relaxed">Intelligent scheduling with conflict detection, teacher availability tracking, and automated substitution management.</p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="bg-gradient-to-br from-green-50 to-white p-8 rounded-xl hover:shadow-xl transition-all border border-green-100 scale-in"
+              style="transition-delay: 0.6s"
+            >
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-green-500/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-gray-900 mb-2">Communication Hub</h3>
+                  <p class="text-gray-600 text-sm leading-relaxed">Bulk SMS, email campaigns, push notifications, parent-teacher messaging, and emergency broadcast system.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Overview Section -->
+      <!-- Added scroll-animate class to section -->
+      <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white scroll-animate">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            >
+              Comprehensive Features for
+              <span class="gradient-text">Modern Education</span>
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+              Everything you need to manage your institution efficiently, from
+              student enrollment to academic tracking and parent engagement.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <article
+              class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-xl hover:shadow-xl transition-all border border-blue-100"
+            >
+              <div
+                class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6"
+              >
+                <svg
+                  class="w-8 h-8 text-primary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Student Enrollment
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                Streamline admissions with digital forms, automated verification,
+                and instant record generation for seamless onboarding.
+              </p>
+            </article>
+
+            <article
+              class="bg-gradient-to-br from-purple-50 to-white p-8 rounded-xl hover:shadow-xl transition-all border border-purple-100"
+            >
+              <div
+                class="w-14 h-14 bg-secondary/10 rounded-lg flex items-center justify-center mb-6"
+              >
+                <svg
+                  class="w-8 h-8 text-secondary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Smart Attendance
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                Track attendance in real-time with biometric integration,
+                automated alerts, and comprehensive reporting dashboards.
+              </p>
+            </article>
+
+            <article
+              class="bg-gradient-to-br from-cyan-50 to-white p-8 rounded-xl hover:shadow-xl transition-all border border-cyan-100"
+            >
+              <div
+                class="w-14 h-14 bg-accent/10 rounded-lg flex items-center justify-center mb-6"
+              >
+                <svg
+                  class="w-8 h-8 text-accent"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Academic Analytics
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                Monitor student performance with detailed analytics, predictive
+                insights, and customizable report cards.
+              </p>
+            </article>
+
+            <article
+              class="bg-gradient-to-br from-indigo-50 to-white p-8 rounded-xl hover:shadow-xl transition-all border border-indigo-100"
+            >
+              <div
+                class="w-14 h-14 bg-indigo-500/10 rounded-lg flex items-center justify-center mb-6"
+              >
+                <svg
+                  class="w-8 h-8 text-indigo-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Parent Connect</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Enable seamless communication through instant notifications,
+                progress updates, and interactive messaging.
+              </p>
+            </article>
+          </div>
+
+          <div class="text-center mt-12">
+            <a
+              href="features.html"
+              class="inline-flex items-center text-primary font-semibold hover:text-blue-700 transition-colors"
+            >
+              View All Features
+              <svg
+                class="w-5 h-5 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <!-- Added scroll-animate class to section -->
+      <section class="pt-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-6">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+        Our <span class="gradient-text">Solutions</span>
+      </h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        Tailored software solutions for every educational need, from K-12
+        schools to universities.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- School Management System -->
+      <article class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+        <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13
+              C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13
+              C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13
+              C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+            </path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">
+          School Management System
+        </h3>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Complete ERP solution for K-12 schools with student enrollment,
+          attendance, academics, and parent communication.
+        </p>
+        <a href="services.html" class="text-primary font-semibold hover:underline inline-flex items-center">
+          Learn More
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </article>
+
+      <!-- Card Management System -->
+      <article class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+        <div class="w-14 h-14 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5
+              m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0
+              m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2
+              M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2">
+            </path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">
+          Card Management System
+        </h3>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          RFID-enabled smart card solutions for attendance, access control,
+          and cashless transactions within campus.
+        </p>
+        <a href="services.html" class="text-secondary font-semibold hover:underline inline-flex items-center">
+          Learn More
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </article>
+
+      <!-- Mobile App -->
+      <article class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+        <div class="w-14 h-14 bg-accent/10 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 18h.01M8 21h8a2 2 0 002-2V5
+              a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z">
+            </path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">
+          School Mobile App
+        </h3>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Native iOS and Android apps for students, parents, and teachers
+          with real-time updates and notifications.
+        </p>
+        <a href="services.html" class="text-accent font-semibold hover:underline inline-flex items-center">
+          Learn More
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </article>
+
+      <!-- University -->
+      <article class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+        <div class="w-14 h-14 bg-green-600/10 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18
+              M3 7l9-4 9 4M4 10h16v11H4V10z">
+            </path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">
+          University Management Software
+        </h3>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Enterprise-grade solution for universities with multi-campus support,
+          research management, and accreditation tools.
+        </p>
+        <a href="services.html" class="text-green-600 font-semibold hover:underline inline-flex items-center">
+          Learn More
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </article>
+
+      <!-- LMS -->
+      <article class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+        <div class="w-14 h-14 bg-pink-600/10 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18
+              M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+            </path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">
+          Learning Management Software
+        </h3>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Complete LMS with online classes, assignments, assessments,
+          and interactive content delivery.
+        </p>
+        <a href="services.html" class="text-pink-600 font-semibold hover:underline inline-flex items-center">
+          Learn More
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </article>
+
+      <!-- Website -->
+      <article class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
+        <div class="w-14 h-14 bg-orange-600/10 rounded-lg flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3
+              m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9
+              s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9
+              s1.343-9 3-9m-9 9a9 9 0 019-9">
+            </path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">
+          Website Design Services
+        </h3>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Professional, responsive website design and development services
+          for educational institutions.
+        </p>
+        <a href="services.html" class="text-orange-600 font-semibold hover:underline inline-flex items-center">
+          Learn More
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+      <!-- How It Works Section -->
+      <!-- Added scroll-animate and staggered animations -->
+      <section class="py-20 px-8 sm:px-6 lg:px-8 bg-white scroll-animate">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            >
+              How It <span class="gradient-text">Works</span>
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+              Get started with our school management system in four simple steps.
+            </p>
+          </div>
+        <div class="relative grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+
+  <!-- Arrow (1 → 2) -->
+  <div class="hidden lg:flex absolute top-1/2 left-[23%] -translate-y-1/2 z-20">
+    <svg class="w-10 h-10 text-gray-300" fill="none" viewBox="0 0 24 24">
+      <path d="M5 12h14m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <!-- Arrow (2 → 3) -->
+  <div class="hidden lg:flex absolute top-1/2 left-[48%] -translate-y-1/2 z-20">
+    <svg class="w-10 h-10 text-gray-300" fill="none" viewBox="0 0 24 24">
+      <path d="M5 12h14m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <!-- Arrow (3 → 4) -->
+  <div class="hidden lg:flex absolute top-1/2 left-[75%] -translate-y-1/2 z-20">
+    <svg class="w-10 h-10 text-gray-300" fill="none" viewBox="0 0 24 24">
+      <path d="M5 12h14m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <!-- Step 1 -->
+  <article class="relative bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition slide-left">
+    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-semibold mx-auto mb-6">
+      1
+    </div>
+    <h3 class="text-lg font-semibold text-gray-900 mb-3">Discovery & Planning</h3>
+    <p class="text-sm text-gray-600">
+      Analyze institutional requirements and plan implementation.
+    </p>
+  </article>
+
+  <!-- Step 2 -->
+  <article class="relative bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition slide-left">
+    <div class="w-16 h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center text-2xl font-semibold mx-auto mb-6">
+      2
+    </div>
+    <h3 class="text-lg font-semibold text-gray-900 mb-3">Data Migration</h3>
+    <p class="text-sm text-gray-600">
+      Secure migration and seamless system integration.
+    </p>
+  </article>
+
+  <!-- Step 3 -->
+  <article class="relative bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition slide-left">
+    <div class="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center text-2xl font-semibold mx-auto mb-6">
+      3
+    </div>
+    <h3 class="text-lg font-semibold text-gray-900 mb-3">Training & Onboarding</h3>
+    <p class="text-sm text-gray-600">
+      Guided onboarding sessions for smooth adoption.
+    </p>
+  </article>
+
+  <!-- Step 4 -->
+  <article class="relative bg-white rounded-2xl p-8 text-center shadow-sm hover:shadow-lg transition slide-left">
+    <div class="w-16 h-16 bg-indigo-600 text-white rounded-full flex items-center justify-center text-2xl font-semibold mx-auto mb-6">
+      4
+    </div>
+    <h3 class="text-lg font-semibold text-gray-900 mb-3">Go Live & Support</h3>
+    <p class="text-sm text-gray-600">
+      Launch with 24/7 support and continuous optimization.
+    </p>
+  </article>
+
+</div>
+
+      </section>
+
+      <!-- ROI Section -->
+      <!-- Added scroll-animate class -->
+      <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white scroll-animate">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              Measurable <span class="gradient-text">Impact & ROI</span>
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+              See real results within the first few months of implementation.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center p-6">
+              <div class="text-5xl font-bold text-primary mb-3 counter"  data-suffix="%" data-target="72">0%</div>
+              <p class="text-xl font-semibold text-gray-900 mb-2">Time Saved</p>
+              <p class="text-gray-600 text-sm">On administrative tasks and paperwork reduction</p>
+            </div>
+
+            <div class="text-center p-6">
+              <div class="text-5xl font-bold text-secondary mb-3 counter"  data-suffix="%" data-target="94">0%</div>
+              <p class="text-xl font-semibold text-gray-900 mb-2">Parent Satisfaction</p>
+              <p class="text-gray-600 text-sm">Improved communication and transparency</p>
+            </div>
+
+            <div class="text-center p-6">
+              <div class="text-5xl font-bold text-accent mb-3 counter" data-suffix="%"  data-target="68">0%</div>
+              <p class="text-xl font-semibold text-gray-900 mb-2">Cost Reduction</p>
+              <p class="text-gray-600 text-sm">In operational and printing expenses</p>
+            </div>
+
+            <div class="text-center p-6">
+              <div class="text-5xl font-bold text-green-600 mb-3 counter" data-suffix="%"  data-target="96">0%</div>
+              <p class="text-xl font-semibold text-gray-900 mb-2">Data Accuracy</p>
+              <p class="text-gray-600 text-sm">Elimination of manual entry errors</p>
+            </div>
+          </div>
+
+
+          <div class="mt-16 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 md:p-12">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+                  Ready to Transform Your Institution?
+                </h3>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                  Join over 500+ educational institutions that have already digitized their operations. Get started with a free demo and see the difference yourself.
+                </p>
+                <ul class="space-y-3">
+                  <li class="flex items-center text-gray-700">
+                    <svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    30-day free trial with full features
+                  </li>
+                  <li class="flex items-center text-gray-700">
+                    <svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    No credit card required for trial
+                  </li>
+                  <li class="flex items-center text-gray-700">
+                    <svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Free data migration & onboarding
+                  </li>
+                  <li class="flex items-center text-gray-700">
+                    <svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Dedicated implementation support
+                  </li>
+                </ul>
+              </div>
+              <div class="text-center md:text-right">
+                <img src="assets/images/transform-vector.jpg" alt="School Management Dashboard" class="rounded-lg shadow-xl w-full" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Testimonials Section -->
+      <!-- Added scroll-animate class -->
+      <!-- Interactive Testimonials Carousel Section -->
+      <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+        What Our <span class="gradient-text">Clients Say</span>
+      </h2>
+      <p class="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+        Trusted by 500+ educational institutions across India
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Testimonial 1 -->
+      <article class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+        <p class="text-gray-700 text-lg mb-6 italic leading-relaxed">
+          "ETNS School Management System has revolutionized how we manage our institution. The automated attendance and real-time parent communication features have saved us countless hours."
+        </p>
+        <div class="border-t pt-4">
+          <p class="font-bold text-gray-900">Dr. Rajesh Kumar</p>
+          <p class="text-gray-600 text-sm">Principal</p>
+        </div>
+      </article>
+
+      <!-- Testimonial 2 -->
+      <article class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+        <p class="text-gray-700 text-lg mb-6 italic leading-relaxed">
+          "The mobile app is incredibly user-friendly. Parents love being able to track their child's progress in real-time. It's made parent-teacher communication so much more efficient."
+        </p>
+        <div class="border-t pt-4">
+          <p class="font-bold text-gray-900">Priya Sharma</p>
+          <p class="text-gray-600 text-sm">School Administrator</p>
+        </div>
+      </article>
+
+      <!-- Testimonial 3 -->
+      <article class="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+        <p class="text-gray-700 text-lg mb-6 italic leading-relaxed">
+          "Implementation was seamless and the support team was exceptional. We went from manual processes to a fully digital system in just 2 weeks. Highly recommended!"
+        </p>
+        <div class="border-t pt-4">
+          <p class="font-bold text-gray-900">Amit Patel</p>
+          <p class="text-gray-600 text-sm">Director</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+
+      <!-- Partners Section -->
+      <!-- Added scroll-animate class -->
+      <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+  <div class="max-w-7xl mx-auto">
+
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        Trusted <span class="gradient-text">Partners</span>
+      </h2>
+      <p class="text-lg text-gray-600">
+        Collaborating with industry leaders to deliver excellence
+      </p>
+    </div>
+
+    <div class="flex flex-wrap justify-center items-center gap-12">
+
+      <!-- ByteIQ -->
+      <a
+        href="https://byteiqanalytics.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="relative flex items-center justify-center p-8 rounded-lg transition-colors duration-300"
+        style="width:200px; height:120px;"
+      >
+        <img
+          src="https://etns.co.in/_next/image?url=%2Fassets%2Fimages%2FPartners%2Fbyteiq.jpeg&w=256&q=75"
+          alt="ByteIQ Analytics Partner"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        />
+        <span class="sr-only">ByteIQ</span>
+      </a>
+
+      <!-- Concerto -->
+      <a
+        href="https://www.concertosoft.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="relative flex items-center justify-center p-8 rounded-lg transition-colors duration-300"
+        style="width:200px; height:120px;"
+      >
+        <img
+          src="https://etns.co.in/_next/image?url=%2Fassets%2Fimages%2FPartners%2Fconcerto.png&w=256&q=75"
+          alt="Concerto Software Partner"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        />
+        <span class="sr-only">Concerto</span>
+      </a>
+
+      <!-- Infotree -->
+      <a
+        href="https://www.infotreeglobal.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="relative flex items-center justify-center p-8 rounded-lg transition-colors duration-300"
+        style="width:200px; height:120px;"
+      >
+        <img
+          src="https://etns.co.in/_next/image?url=%2Fassets%2Fimages%2FPartners%2Finfotree-new-globe-logo.png&w=256&q=75"
+          alt="Infotree Global Partner"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        />
+        <span class="sr-only">Infotree</span>
+      </a>
+
+      <!-- Maison -->
+      <a
+        href="https://maisontechnology.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="relative flex items-center justify-center p-8 rounded-lg transition-colors duration-300"
+        style="width:200px; height:120px;"
+      >
+        <img
+          src="https://etns.co.in/_next/image?url=%2Fassets%2Fimages%2FPartners%2Fmaison.png&w=256&q=75"
+          alt="Maison Technology Partner"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        />
+        <span class="sr-only">Maison Technology</span>
+      </a>
+
+      <!-- ValueFirst -->
+      <a
+        href="https://www.vfirst.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="relative flex items-center justify-center p-8 rounded-lg transition-colors duration-300"
+        style="width:200px; height:120px;"
+      >
+        <img
+          src="https://etns.co.in/assets/images/Partners/valuefirst.svg"
+          alt="ValueFirst Communication Partner"
+          class="w-full h-full object-contain"
+          loading="lazy"
+        />
+        <span class="sr-only">ValueFirst</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+      <!-- CTA Section -->
+      <!-- Added scale-in animation -->
+      <!-- Enhanced Call-to-Action Section with Interactive Elements -->
+      <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary to-secondary scroll-animate">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+            Ready to Revolutionize Your Institution?
+          </h2>
+          <p class="text-xl text-blue-100 mb-8">
+            Join 500+ institutions already using our platform to revolutionize education management
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button id="cta-demo-btn" class="bg-white text-primary px-8 py-4 rounded-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl text-center font-semibold pulse-glow">
+              Schedule a Free Demo
+            </button>
+            <a href="contact.html" class="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-primary transition-all text-center font-semibold">
+              Contact Sales
+            </a>
+          </div>
+
+          <p class="text-blue-100 mt-6">
+            No credit card required • Free 90-day trial • Cancel anytime
+          </p>
+        </div>
+      </section>
+
+      <!-- Interactive FAQ Accordion Section -->
+      <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 scroll-animate">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              Frequently Asked <span class="gradient-text">Questions</span>
+            </h2>
+            <p class="text-lg text-gray-600">
+              Get answers to common questions about our platform
+            </p>
+          </div>
+
+          <div class="space-y-4" id="faq-accordion">
+            <!-- FAQ items will be dynamically added -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Demo Modal Dialog -->
+      <!-- Enhanced Demo Request Modal with better styling -->
+      <div
+        id="demo-modal"
+        class="hidden fixed inset-0 z-[60] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4"
+      >
+        <div
+          class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative"
+        >
+          <button
+            id="close-modal"
+            class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition-colors z-10"
+            aria-label="Close modal"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+
+          <div class="p-8 md:p-12">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-primary text-center mb-8"
+            >
+              Book a Free Demo
+            </h2>
+
+            <form id="demo-form" class="space-y-6">
+              <div>
+                <label
+                  for="demo-name"
+                  class="block text-sm font-medium text-gray-700 mb-2"
+                >
+                  Your Name <span class="text-red-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="demo-name"
+                  name="name"
+                  required
+                  placeholder="Your Name"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                />
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    for="demo-mobile"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                  >
+                    Mobile No. <span class="text-red-500">*</span>
+                  </label>
+                  <div class="flex">
+                    <div
+                      class="flex items-center px-3 bg-gray-50 border border-r-0 border-gray-300 rounded-l-lg"
+                    >
+  <span class="text-2xl">🇮🇳</span> 
+                      <!-- <span class="ml-1 text-gray-600">▼</span> -->
+                    </div>
+                    <input
+                      type="tel"
+                      id="demo-mobile"
+                      name="mobile"
+                      required
+                      placeholder="081234 56789"
+                      pattern="[0-9]{10}"
+                      class="flex-1 px-4 py-3 border border-gray-300 rounded-r-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    for="demo-email"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                  >
+                    E-Mail Address <span class="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="demo-email"
+                    name="email"
+                    required
+                    placeholder="E-Mail Address"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label
+                  for="demo-institute"
+                  class="block text-sm font-medium text-gray-700 mb-2"
+                >
+                  Institute Name
+                </label>
+                <input
+                  type="text"
+                  id="demo-institute"
+                  name="institute"
+                  placeholder="Institute Name"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="demo-role"
+                  class="block text-sm font-medium text-gray-700 mb-2"
+                >
+                  Role
+                </label>
+                <select
+                  id="demo-role"
+                  name="role"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all bg-white"
+                >
+                  <option value="">Select Role</option>
+                  <option value="principal">Principal</option>
+                  <option value="administrator">Administrator</option>
+                  <option value="teacher">Teacher</option>
+                  <option value="it-manager">IT Manager</option>
+                  <option value="owner">School Owner</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 rounded-lg transition-colors text-lg"
+              >
+                Submit Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#001f3f] text-gray-300 pt-8 px-4 sm:px-6 lg:px-8 pb-2">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-12 mb-12">
+          <!-- Company Info -->
+          <div>
+            <div class="flex items-center mb-4">
+              <div class="text-3xl font-bold text-white">
+                <img
+                  src="https://etns.co.in/_next/image?url=%2Fassets%2Fimages%2FFooter%20Logo.png&w=256&q=75"
+                  alt=""
+                />
+              </div>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+              ETN Solutions is an IT consulting, outsourcing and technology
+              company founded and incorporated in India, UAE in 2016. We are
+              expertise in Payment Industry, Card Domain.
+            </p>
+          <nav aria-label="Social Media Links" class="flex space-x-4"><a aria-label="Social link" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 text-white transition-colors hover:bg-blue-600" href="https://www.facebook.com/etn.solution"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_325_218)"><path d="M24 12C24 5.37263 18.6274 0 12 0C5.37262 0 0 5.37263 0 12C0 17.9895 4.38825 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9705 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.3399 7.875 13.875 8.80003 13.875 9.74906V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6117 22.954 24 17.9896 24 12Z" fill="#1877F2"></path><path d="M16.6711 15.4688L17.2031 12H13.875V9.74906C13.875 8.79994 14.3399 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6575 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C10.7453 23.9514 11.3722 24.0001 12 24C12.6278 24.0001 13.2547 23.9514 13.875 23.8542V15.4688H16.6711Z" fill="white"></path></g><defs><clipPath id="clip0_325_218"><rect width="24" height="24" fill="white"></rect></clipPath></defs></svg></a><a aria-label="Social link" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 text-white transition-colors hover:bg-blue-600" href="https://www.instagram.com/etn.solutions/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.375 0H5.625C2.5184 0 0 2.5184 0 5.625V18.375C0 21.4816 2.5184 24 5.625 24H18.375C21.4816 24 24 21.4816 24 18.375V5.625C24 2.5184 21.4816 0 18.375 0Z" fill="url(#paint0_radial_325_222)"></path><path d="M18.375 0H5.625C2.5184 0 0 2.5184 0 5.625V18.375C0 21.4816 2.5184 24 5.625 24H18.375C21.4816 24 24 21.4816 24 18.375V5.625C24 2.5184 21.4816 0 18.375 0Z" fill="url(#paint1_radial_325_222)"></path><path d="M12.0008 2.625C9.45478 2.625 9.13519 2.63616 8.13525 2.68163C7.13719 2.72738 6.45591 2.88534 5.85984 3.11719C5.24316 3.35662 4.72013 3.67697 4.19906 4.19822C3.67753 4.71937 3.35719 5.24241 3.117 5.85881C2.8845 6.45506 2.72634 7.13662 2.68144 8.13422C2.63672 9.13425 2.625 9.45394 2.625 12.0001C2.625 14.5463 2.63625 14.8648 2.68163 15.8647C2.72756 16.8628 2.88553 17.5441 3.11719 18.1402C3.35681 18.7568 3.67716 19.2799 4.19841 19.8009C4.71938 20.3225 5.24241 20.6436 5.85862 20.883C6.45516 21.1148 7.13653 21.2728 8.13441 21.3186C9.13444 21.364 9.45375 21.3752 11.9997 21.3752C14.5461 21.3752 14.8646 21.364 15.8646 21.3186C16.8626 21.2728 17.5447 21.1148 18.1412 20.883C18.7576 20.6436 19.2799 20.3225 19.8007 19.8009C20.3223 19.2799 20.6425 18.7568 20.8828 18.1404C21.1133 17.5441 21.2715 16.8626 21.3184 15.8649C21.3633 14.865 21.375 14.5463 21.375 12.0001C21.375 9.45394 21.3633 9.13444 21.3184 8.13441C21.2715 7.13634 21.1133 6.45516 20.8828 5.85909C20.6425 5.24241 20.3223 4.71937 19.8007 4.19822C19.2793 3.67678 18.7578 3.35644 18.1406 3.11728C17.543 2.88534 16.8613 2.72728 15.8632 2.68163C14.8632 2.63616 14.5448 2.625 11.9979 2.625H12.0008ZM11.1598 4.31447C11.4095 4.31409 11.688 4.31447 12.0008 4.31447C14.5041 4.31447 14.8007 4.32347 15.7892 4.36838C16.7032 4.41019 17.1994 4.56291 17.5298 4.69125C17.9674 4.86112 18.2793 5.06428 18.6072 5.3925C18.9353 5.72062 19.1384 6.03309 19.3088 6.47062C19.4371 6.80062 19.59 7.29675 19.6316 8.21081C19.6765 9.19913 19.6863 9.49594 19.6863 11.9979C19.6863 14.4999 19.6765 14.7968 19.6316 15.7851C19.5898 16.6991 19.4371 17.1952 19.3088 17.5253C19.1389 17.9629 18.9353 18.2744 18.6072 18.6023C18.2791 18.9305 17.9676 19.1335 17.5298 19.3035C17.1997 19.4324 16.7032 19.5848 15.7892 19.6266C14.8009 19.6715 14.5041 19.6812 12.0008 19.6812C9.49753 19.6812 9.20081 19.6715 8.21259 19.6266C7.29853 19.5844 6.80241 19.4317 6.47166 19.3033C6.03422 19.1333 5.72166 18.9303 5.39353 18.6022C5.06541 18.274 4.86234 17.9623 4.692 17.5246C4.56366 17.1945 4.41075 16.6984 4.36913 15.7843C4.32422 14.796 4.31522 14.4992 4.31522 11.9956C4.31522 9.492 4.32422 9.19678 4.36913 8.20847C4.41094 7.29441 4.56366 6.79828 4.692 6.46781C4.86197 6.03028 5.06541 5.71781 5.39363 5.38969C5.72184 5.06156 6.03422 4.85841 6.47175 4.68816C6.80222 4.55925 7.29853 4.40691 8.21259 4.36491C9.07744 4.32581 9.41259 4.31409 11.1598 4.31212V4.31447ZM17.0052 5.87109C16.3841 5.87109 15.8802 6.37453 15.8802 6.99572C15.8802 7.61681 16.3841 8.12072 17.0052 8.12072C17.6263 8.12072 18.1302 7.61681 18.1302 6.99572C18.1302 6.37463 17.6263 5.87072 17.0052 5.87072V5.87109ZM12.0008 7.18556C9.34209 7.18556 7.18641 9.34125 7.18641 12.0001C7.18641 14.6589 9.34209 16.8136 12.0008 16.8136C14.6597 16.8136 16.8146 14.6589 16.8146 12.0001C16.8146 9.34134 14.6595 7.18556 12.0007 7.18556H12.0008ZM12.0008 8.87503C13.7267 8.87503 15.1259 10.2741 15.1259 12.0001C15.1259 13.7259 13.7267 15.1252 12.0008 15.1252C10.275 15.1252 8.87588 13.7259 8.87588 12.0001C8.87588 10.2741 10.2749 8.87503 12.0008 8.87503Z" fill="white"></path><defs><radialGradient id="paint0_radial_325_222" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(6.375 25.8485) rotate(-90) scale(23.7858 22.1227)"><stop stop-color="#FFDD55"></stop><stop offset="0.1" stop-color="#FFDD55"></stop><stop offset="0.5" stop-color="#FF543E"></stop><stop offset="1" stop-color="#C837AB"></stop></radialGradient><radialGradient id="paint1_radial_325_222" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-4.02009 1.72884) rotate(78.681) scale(10.6324 43.827)"><stop stop-color="#3771C8"></stop><stop offset="0.128" stop-color="#3771C8"></stop><stop offset="1" stop-color="#6600FF" stop-opacity="0"></stop></radialGradient></defs></svg></a><a aria-label="Social link" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 text-white transition-colors hover:bg-blue-600" href="http://www.youtube.com/@user-vn2lg9bg4x"><svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_325_226)"><path d="M23.47 3.15153C23.3323 2.63903 23.0638 2.1718 22.6911 1.79637C22.3185 1.42094 21.8547 1.1504 21.346 1.0117C19.4835 0.5 11.9878 0.5 11.9878 0.5C11.9878 0.5 4.49177 0.515489 2.62933 1.02719C2.1206 1.1659 1.65681 1.43645 1.28415 1.8119C0.911497 2.18735 0.642976 2.6546 0.505331 3.16711C-0.0580132 6.50081 -0.276545 11.5806 0.520799 14.7809C0.658459 15.2934 0.926986 15.7607 1.29964 16.1361C1.6723 16.5115 2.13608 16.7821 2.6448 16.9208C4.50724 17.4325 12.0031 17.4325 12.0031 17.4325C12.0031 17.4325 19.4989 17.4325 21.3612 16.9208C21.87 16.7821 22.3338 16.5116 22.7064 16.1361C23.0791 15.7607 23.3477 15.2935 23.4853 14.7809C24.0795 11.4425 24.2626 6.36585 23.47 3.15153Z" fill="#FF0000"></path><path d="M9.60156 12.5946L15.8198 8.96626L9.60156 5.33789V12.5946Z" fill="white"></path></g><defs><clipPath id="clip0_325_226"><rect width="24" height="17" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg></a><a aria-label="Social link" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 text-white transition-colors hover:bg-blue-600" href="https://www.linkedin.com/company/etn-solutions-private-limited/"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.375 0H5.625C2.5184 0 0 2.5184 0 5.625V18.375C0 21.4816 2.5184 24 5.625 24H18.375C21.4816 24 24 21.4816 24 18.375V5.625C24 2.5184 21.4816 0 18.375 0Z" fill="white"></path><path d="M18.375 0H5.625C2.5184 0 0 2.5184 0 5.625V18.375C0 21.4816 2.5184 24 5.625 24H18.375C21.4816 24 24 21.4816 24 18.375V5.625C24 2.5184 21.4816 0 18.375 0Z" fill="#0A66C2"></path><path d="M17.317 20.408H20.0611C20.1605 20.408 20.2559 20.3685 20.3262 20.2982C20.3965 20.2279 20.4361 20.1325 20.4361 20.0331L20.4375 14.2354C20.4375 11.2051 19.7845 8.87588 16.2433 8.87588C14.8972 8.82581 13.6277 9.51975 12.9427 10.6785C12.9393 10.6841 12.9342 10.6885 12.9281 10.691C12.9221 10.6934 12.9154 10.6938 12.909 10.6921C12.9027 10.6904 12.8971 10.6867 12.8931 10.6815C12.8891 10.6763 12.8869 10.67 12.8869 10.6634V9.53063C12.8869 9.43117 12.8474 9.33579 12.777 9.26546C12.7067 9.19513 12.6113 9.15563 12.5119 9.15563H9.90778C9.80832 9.15563 9.71294 9.19513 9.64262 9.26546C9.57229 9.33579 9.53278 9.43117 9.53278 9.53063V20.0325C9.53278 20.132 9.57229 20.2273 9.64262 20.2977C9.71294 20.368 9.80832 20.4075 9.90778 20.4075H12.6517C12.7511 20.4075 12.8465 20.368 12.9168 20.2977C12.9871 20.2273 13.0267 20.132 13.0267 20.0325V14.8413C13.0267 13.3734 13.3051 11.9519 15.1249 11.9519C16.9188 11.9519 16.942 13.6315 16.942 14.9363V20.033C16.942 20.1324 16.9815 20.2278 17.0519 20.2981C17.1222 20.3685 17.2176 20.408 17.317 20.408ZM3.5625 5.59012C3.5625 6.70237 4.47816 7.61756 5.5905 7.61756C6.70256 7.61747 7.61766 6.70172 7.61766 5.58966C7.61747 4.47759 6.70228 3.5625 5.59012 3.5625C4.47769 3.5625 3.5625 4.47787 3.5625 5.59012ZM4.21491 20.408H6.96244C7.06189 20.408 7.15728 20.3685 7.2276 20.2981C7.29793 20.2278 7.33744 20.1324 7.33744 20.033V9.53063C7.33744 9.43117 7.29793 9.33579 7.2276 9.26546C7.15728 9.19513 7.06189 9.15563 6.96244 9.15563H4.21491C4.11545 9.15563 4.02007 9.19513 3.94974 9.26546C3.87942 9.33579 3.83991 9.43117 3.83991 9.53063V20.033C3.83991 20.1324 3.87942 20.2278 3.94974 20.2981C4.02007 20.3685 4.11545 20.408 4.21491 20.408Z" fill="white"></path></svg></a><a aria-label="Social link" class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 text-white transition-colors hover:bg-blue-600" href="https://x.com/etn_solutions"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 256 256"><g transform="scale(5.12,5.12)"><path d="M11,4c-3.866,0 -7,3.134 -7,7v28c0,3.866 3.134,7 7,7h28c3.866,0 7,-3.134 7,-7v-28c0,-3.866 -3.134,-7 -7,-7z" fill="#1a1a1a"></path><path d="M13.08594,13h7.9375l5.63672,8.00977l6.83984,-8.00977h2.5l-8.21094,9.61328l10.125,14.38672h-7.93555l-6.54102,-9.29297l-7.9375,9.29297h-2.5l9.30859,-10.89648zM16.91406,15l14.10742,20h3.06445l-14.10742,-20z" fill="#ffffff"></path></g></svg></a></nav>
+
+          </div>
+
+          <!-- Product Links -->
+          <div>
+            <h4 class="text-lg font-semibold text-white mb-6">Product</h4>
+            <nav aria-label="Product navigation">
+              <ul class="space-y-3 text-sm">
+
+                <li>
+                  <a
+                    href="https://etns.co.in/products/card-management-system"
+                    class="text-gray-400 hover:text-white transition-colors"
+                  >
+                    Card Management System
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://etns.co.in/products/reconciliation-settlement-platform"
+                    class="text-gray-400 hover:text-white transition-colors"
+                  >
+                    Reconciliation & Settlement Platform
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://etns.co.in/products/loyalty-rewards-systems"
+                    class="text-gray-400 hover:text-white transition-colors"
+                  >
+                    Loyalty & Rewards Systems
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://etns.co.in/products/warranty-management-system"
+                    class="text-gray-400 hover:text-white transition-colors"
+                  >
+                    Warranty Management System
+                  </a>
+                </li>
+
+                <!-- keeping as-is (no link provided by you) -->
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors"
+                  >
+                    School Management System
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-white transition-colors"
+                  >
+                    Consumer Card Programs
+                  </a>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+
+
+          <!-- Keep in Touch -->
+          <div>
+            <h4 class="text-lg font-semibold text-white mb-6">Keep in Touch</h4>
+            <div class="space-y-4 text-sm">
+              <div class="flex items-start gap-3">
+                <svg
+                  class="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  ></path>
+                </svg>
+                <div>
+                  <p class="text-white font-medium">Address :</p>
+                  <address class="not-italic text-gray-400 leading-relaxed">
+                    GA Plot No-K3/1067-2nd Floor, Ghatikia, Kalinga Nagar,
+                    Bhubaneswar, Odisha, India. PIN - 751029
+                  </address>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <svg
+                  class="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  ></path>
+                </svg>
+                <div>
+                  <p class="text-white font-medium">Address 2 :</p>
+                  <address class="not-italic text-gray-400 leading-relaxed">
+                    88/2, Acharya Vihar, Bhubaneswar, Odisha, India. PIN -
+                    751013
+                  </address>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <svg
+                  class="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <div>
+                  <p class="text-white font-medium">Mail :</p>
+                  <p class="text-gray-400">
+                    <a
+                      href="mailto:etns.info@etns.co.in"
+                      class="hover:text-white transition-colors"
+                      >etns.info@etns.co.in</a
+                    >
+                  </p>
+                  <p class="text-gray-400">
+                    <a
+                      href="mailto:etns.hr@etns.co.in"
+                      class="hover:text-white transition-colors"
+                      >etns.hr@etns.co.in</a
+                    >
+                  </p>
+                  <p class="text-xs text-gray-500 mt-1">
+                    (Drop an email for ex-employee verification)
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <svg width="23" height="23" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.07143 9.78662V6.02947C4.08259 5.29095 4.23936 4.56188 4.53277 3.88405C4.82618 3.20622 5.25045 2.59294 5.78128 2.07936C6.31211 1.56578 6.93907 1.16199 7.62622 0.891132C8.31338 0.620271 9.04722 0.487662 9.78571 0.500902C10.5242 0.487662 11.2581 0.620271 11.9452 0.891132C12.6324 1.16199 13.2593 1.56578 13.7901 2.07936C14.321 2.59294 14.7453 3.20622 15.0387 3.88405C15.3321 4.56188 15.4888 5.29095 15.5 6.02947V9.78662M12.6429 17.2866C13.4006 17.2866 14.1273 16.9856 14.6632 16.4498C15.199 15.914 15.5 15.1872 15.5 14.4295V11.2152M12.6429 17.2866C12.6429 17.7602 12.4547 18.2144 12.1198 18.5493C11.7849 18.8842 11.3307 19.0723 10.8571 19.0723H8.71429C8.24069 19.0723 7.78648 18.8842 7.4516 18.5493C7.11671 18.2144 6.92857 17.7602 6.92857 17.2866C6.92857 16.813 7.11671 16.3588 7.4516 16.0239C7.78648 15.689 8.24069 15.5009 8.71429 15.5009H10.8571C11.3307 15.5009 11.7849 15.689 12.1198 16.0239C12.4547 16.3588 12.6429 16.813 12.6429 17.2866ZM1.92857 7.64376H3.35714C3.54658 7.64376 3.72826 7.71901 3.86222 7.85297C3.99617 7.98692 4.07143 8.1686 4.07143 8.35804V12.6438C4.07143 12.8332 3.99617 13.0149 3.86222 13.1488C3.72826 13.2828 3.54658 13.358 3.35714 13.358H1.92857C1.54969 13.358 1.18633 13.2075 0.918419 12.9396C0.65051 12.6717 0.5 12.3084 0.5 11.9295V9.07233C0.5 8.69345 0.65051 8.33009 0.918419 8.06218C1.18633 7.79427 1.54969 7.64376 1.92857 7.64376ZM17.6429 13.358H16.2143C16.0248 13.358 15.8432 13.2828 15.7092 13.1488C15.5753 13.0149 15.5 12.8332 15.5 12.6438V8.35804C15.5 8.1686 15.5753 7.98692 15.7092 7.85297C15.8432 7.71901 16.0248 7.64376 16.2143 7.64376H17.6429C18.0217 7.64376 18.3851 7.79427 18.653 8.06218C18.9209 8.33009 19.0714 8.69345 19.0714 9.07233V11.9295C19.0714 12.3084 18.9209 12.6717 18.653 12.9396C18.3851 13.2075 18.0217 13.358 17.6429 13.358Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                <div>
+                  <p class="text-white font-medium">Customer Support :</p>
+                  <p class="text-gray-400">
+                    <a
+                      href="tel:+918456023222"
+                      class="hover:text-white transition-colors"
+                      >+91 8456023222</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+
+              <!-- <div class="flex items-start gap-3">
+                <svg
+                  class="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                  ></path>
+                </svg>
+                <div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="border-t border-gray-700 pt-2 text-center">
+          <p class="text-gray-400 text-sm mb-1">All rights reserved</p>
+          <p class="text-white font-semibold text-sm mb-1">
+            © 2025 ETN SOLUTIONS PVT LTD
+          </p>
+          <p class="text-gray-500 text-xs">
+            An ISO 9001 & ISO 27001 Certified Company
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <!-- Added scroll animation JavaScript -->
+    <script>
+      // Scroll animation observer
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+          }
+        });
+      }, observerOptions);
+
+      // Observe all elements with animation classes
+      document.addEventListener('DOMContentLoaded', () => {
+        const animatedElements = document.querySelectorAll('.scroll-animate, .slide-left, .slide-right, .scale-in');
+        animatedElements.forEach(el => observer.observe(el));
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll("[data-target]");
+
+        counters.forEach(counter => {
+          const target = parseFloat(counter.getAttribute("data-target"));
+          const suffix = counter.getAttribute("data-suffix") || "";
+
+          const updateCount = () => {
+            let current = parseFloat(counter.innerText.replace(/[^\d\.]/g, '')) || 0;
+
+            // Adjust increment for smooth animation
+            const increment = target / 100;
+
+            if (current < target) {
+              current += increment;
+              if (current > target) current = target; // avoid overshoot
+
+              // Format number
+              if (target % 1 !== 0) {
+                counter.innerText = current.toFixed(1) + suffix;
+              } else {
+                counter.innerText = Math.ceil(current) + suffix;
+              }
+
+              setTimeout(updateCount, 20); // tweak speed if needed
+            } else {
+              counter.innerText = target + suffix; // exact final value
+            }
+          };
+
+          // Only start when visible
+          const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                updateCount();
+                obs.unobserve(counter);
+              }
+            });
+          }, { threshold: 0.5 });
+
+          observer.observe(counter);
+        });
+      });
+    </script>
+
+  <!-- emaijs end-->
+   <!-- api call -->
+    <script>
+      const form = document.getElementById("demo-form");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const data = {
+          name: document.getElementById("demo-name").value,
+          mobile: document.getElementById("demo-mobile").value,
+          email: document.getElementById("demo-email").value,
+          institute: document.getElementById("demo-institute").value,
+          role: document.getElementById("demo-role").value,
+        };
+
+        try {
+          const res = await fetch("http://localhost:5000/send-demo", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+
+          const result = await res.json();
+
+          if (result.success) {
+            alert("Demo request sent successfully");
+            form.reset();
+          } else {
+            alert("Failed to send demo request");
+          }
+        } catch (err) {
+          alert("Server error");
+          console.error(err);
+        }
+      });
+  </script>
+
+
+
+
+  </body>
+</html>
